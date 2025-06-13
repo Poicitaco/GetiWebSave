@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    background: #007445;
     min-height: 100vh;
     color: #333;
 }
@@ -152,7 +152,7 @@ body {
 }
 
 .footer {
-    background: rgba(30, 60, 114, 0.95);
+    background: #074a2f;
     color: white;
     padding: 40px 0 20px;
     margin-top: 50px;
@@ -211,8 +211,10 @@ body {
 }
 
 .contact-info i {
-    width: 16px;
+    width: 20px;
     text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
 }
 
 .footer-bottom {
@@ -246,6 +248,17 @@ body {
 .social-links a:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+}
+
+.footer-section ul li a i {
+    font-size: 0.8rem;
+    margin-right: 5px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.social-links a i {
+    font-size: 1.2rem;
+    line-height: 40px;
 }
 
 @media (max-width: 768px) {

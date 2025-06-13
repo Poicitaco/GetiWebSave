@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GETI - Hệ thống Quản lý Văn bản</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <img src="https://geti.edu.vn/wp-content/uploads/2024/07/logo-min.png" alt="GETI Logo" class="logo">
         <div class="header-text">
             <h1>HỆ THỐNG QUẢN LÝ VĂN BẢN</h1>
-            <p>Trung tâm Giáo dục Nghề nghiệp GETI</p>
+            <p>Trường Trung cấp Công nghệ Kỹ thuật Tổng hợp</p>
         </div>
     </div>
 
@@ -22,6 +23,8 @@
             <button class="tab active" onclick="showTab('daotao')">Phòng Đào tạo</button>
             <button class="tab" onclick="showTab('tuyensinh')">Phòng Tuyển sinh</button>
             <button class="tab" onclick="showTab('hanhchinh')">Phòng Hành chính</button>
+            <button class="tab" onclick="showTab('trungtamhoptac')">Trung tâm hợp tác quốc tế</button>
+            <button class="tab" onclick="showTab('trungtamboiduong')">Trung tâm bồi dưỡng ngoại ngữ</button>
         </div>
 
         <div id="daotao" class="tab-content active">
@@ -35,6 +38,12 @@
         <div id="hanhchinh" class="tab-content">
             <div id="hanhchinh-documents"></div>
         </div>
+        <div id="trungtamhoptac" class="tab-content">
+            <div id="trungtamhoptac-documents"></div>
+        </div>
+        <div id="trungtamboiduong" class="tab-content">
+            <div id="trungtamboiduong-documents"></div>
+        </div>
     </div>
 
     <footer class="footer">
@@ -42,53 +51,62 @@
             <div class="footer-grid">
                 <div class="footer-section">
                     <h3>Về GETI</h3>
-                    <p>Trung tâm Giáo dục Nghề nghiệp GETI là một trong những trung tâm đào tạo nghề hàng đầu tại Việt
-                        Nam, cam kết mang đến chương trình đào tạo chất lượng cao và cơ hội việc làm tốt nhất cho học
-                        viên.</p>
+                    <p>Trường Trung cấp Công nghệ Kỹ thuật tổng hợp – Thành lập từ năm 1999, với hơn 25 năm đào tạo và
+                        hơn 20.000 học sinh tốt
+                        nghiệp. Nhà trường chú trọng đào tạo gắn với doanh nghiệp, đổi mới phương pháp giảng dạy, tăng
+                        cường kỹ năng thực hành
+                        và phát triển toàn diện kỹ năng nghề nghiệp, đáp ứng nhu cầu thị trường lao động trong nước và
+                        quốc tế.
+                    </p>
                     <div class="contact-info">
-                        <i>📍</i>
-                        <span>Địa chỉ: [Địa chỉ của GETI]</span>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Trụ sở chính: Số 8, tổ 9, phường Thạch Bàn, quận Long Biên, Hà Nội</span>
                     </div>
                     <div class="contact-info">
-                        <i>📞</i>
-                        <span>Điện thoại: [Số điện thoại]</span>
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>Cơ sở đào tạo: Số 58 Phú Xá, Phú Thượng, Tây Hồ, Hà Nội</span>
                     </div>
                     <div class="contact-info">
-                        <i>✉️</i>
-                        <span>Email: [Email liên hệ]</span>
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>Điện thoại: 0243.8544425 / 0971081868</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>Email: congnghekythuatth@gmail.com</span>
                     </div>
                 </div>
 
                 <div class="footer-section">
                     <h3>Liên kết nhanh</h3>
                     <ul>
-                        <li><a href="#daotao">Phòng Đào tạo</a></li>
-                        <li><a href="#tuyensinh">Phòng Tuyển sinh</a></li>
-                        <li><a href="#hanhchinh">Phòng Hành chính</a></li>
-                        <li><a href="https://geti.edu.vn" target="_blank">Website chính</a></li>
-                        <li><a href="#" target="_blank">Thư viện điện tử</a></li>
+                        <li><a href="#daotao"><i class="bi bi-chevron-right"></i> Phòng Đào tạo</a></li>
+                        <li><a href="#tuyensinh"><i class="bi bi-chevron-right"></i> Phòng Tuyển sinh</a></li>
+                        <li><a href="#hanhchinh"><i class="bi bi-chevron-right"></i> Phòng Hành chính</a></li>
+                        <li><a href="https://geti.edu.vn" target="_blank"><i class="bi bi-chevron-right"></i> Website
+                                chính</a></li>
+                        <li><a href="#" target="_blank"><i class="bi bi-chevron-right"></i> Thư viện điện tử</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
                     <h3>Hỗ trợ</h3>
                     <ul>
-                        <li><a href="#" target="_blank">Hướng dẫn sử dụng</a></li>
-                        <li><a href="#" target="_blank">Câu hỏi thường gặp</a></li>
-                        <li><a href="#" target="_blank">Liên hệ hỗ trợ</a></li>
-                        <li><a href="#" target="_blank">Góp ý - Phản hồi</a></li>
-                        <li><a href="#" target="_blank">Chính sách bảo mật</a></li>
+                        <li><a href="#" target="_blank"><i class="bi bi-chevron-right"></i> Hướng dẫn sử dụng</a></li>
+                        <li><a href="#" target="_blank"><i class="bi bi-chevron-right"></i> Câu hỏi thường gặp</a></li>
+                        <li><a href="#" target="_blank"><i class="bi bi-chevron-right"></i> Liên hệ hỗ trợ</a></li>
+                        <li><a href="#" target="_blank"><i class="bi bi-chevron-right"></i> Góp ý - Phản hồi</a></li>
+                        <li><a href="#" target="_blank"><i class="bi bi-chevron-right"></i> Chính sách bảo mật</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Trung tâm Giáo dục Nghề nghiệp GETI. Tất cả quyền được bảo lưu.</p>
+                <p>&copy; Copyright 2025 - Trường Trung Cấp Công Nghệ Kỹ Thuật Tổng Hợp </p>
+
                 <div class="social-links">
-                    <a href="#" target="_blank" title="Facebook">📘</a>
-                    <a href="#" target="_blank" title="YouTube">📺</a>
-                    <a href="#" target="_blank" title="LinkedIn">💼</a>
-                    <a href="#" target="_blank" title="Email">✉️</a>
+                    <a href="#" target="_blank" title="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" target="_blank" title="YouTube"><i class="bi bi-youtube"></i></a>
+                    <a href="#" target="_blank" title="Email"><i class="bi bi-envelope"></i></a>
                 </div>
             </div>
         </div>

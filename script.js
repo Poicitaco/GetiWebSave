@@ -14,6 +14,16 @@ let documentData = {
         { id: 7, title: "Quy định nội bộ", link: "https://example.com/quy-dinh-noi-bo.pdf" },
         { id: 8, title: "Biểu mẫu hành chính", link: "https://example.com/bieu-mau-hanh-chinh.pdf" },
         { id: 9, title: "Quy trình làm việc", link: "https://example.com/quy-trinh-lam-viec.pdf" }
+    ],
+    trungtamhoptac: [
+        { id: 10, title: "Hợp đồng hợp tác", link: "https://example.com/hop-dong-hop-tac.pdf" },
+        { id: 11, title: "Quy chế hợp tác", link: "https://example.com/quy-che-hop-tac.pdf" },
+        { id: 12, title: "Hợp đồng hợp tác", link: "https://example.com/hop-dong-hop-tac.pdf" }
+    ],
+    trungtamboiduong: [
+        { id: 13, title: "Hợp đồng bồi dưỡng", link: "https://example.com/hop-dong-boi-duong.pdf" },
+        { id: 14, title: "Quy chế bồi dưỡng", link: "https://example.com/quy-che-boi-duong.pdf" },
+        { id: 15, title: "Hợp đồng bồi dưỡng", link: "https://example.com/hop-dong-boi-duong.pdf" }
     ]
 };
 
@@ -22,6 +32,8 @@ function init() {
     renderDocuments('daotao');
     renderDocuments('tuyensinh');
     renderDocuments('hanhchinh');
+    renderDocuments('trungtamhoptac');
+    renderDocuments('trungtamboiduong');
 }
 
 // Hiển thị tab cụ thể
