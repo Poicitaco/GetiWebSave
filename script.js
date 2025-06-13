@@ -2,7 +2,7 @@
 let documentData = {
     daotao: [
         { id: 1, title: "Quy chế đào tạo nghề", link: "https://www.youtube.com/" },
-        { id: 2, title: "Chương trình khung đào tạo", link: "https://example.com/chuong-trinh-khung.pdf" },
+        { id: 2, title: "Chương trình khung đào tạo", link: "https://example.cHiom/chuong-trinh-khung.pdf" },
         { id: 3, title: "Hướng dẫn thực tập", link: "https://example.com/huong-dan-thuc-tap.pdf" }
     ],
     tuyensinh: [
