@@ -1,7 +1,7 @@
 // Dữ liệu văn bản - chỉnh sửa trực tiếp tại đây để thêm văn bản mới
 let documentData = {
     daotao: [
-        { id: 1, title: "Quy chế đào tạo nghề", link: "https://example.com/quy-che-dao-tao.pdf" },
+        { id: 1, title: "Quy chế đào tạo nghề", link: "https://www.youtube.com/" },
         { id: 2, title: "Chương trình khung đào tạo", link: "https://example.com/chuong-trinh-khung.pdf" },
         { id: 3, title: "Hướng dẫn thực tập", link: "https://example.com/huong-dan-thuc-tap.pdf" }
     ],
