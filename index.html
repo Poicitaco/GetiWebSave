@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GETI - Hệ thống Quản lý Văn bản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://geti.edu.vn/wp-content/uploads/2024/07/logo-min.png" alt="GETI Logo" class="logo">
+        <div class="header-text">
+            <h1>Hệ thống Quản lý Văn bản</h1>
+            <p>Trung tâm Giáo dục Nghề nghiệp GETI</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('daotao')">Phòng Đào tạo</button>
+            <button class="tab" onclick="showTab('tuyensinh')">Phòng Tuyển sinh</button>
+            <button class="tab" onclick="showTab('hanhchinh')">Phòng Hành chính</button>
+        </div>
+
+        <div id="daotao" class="tab-content active">
+            <div id="daotao-documents"></div>
+        </div>
+
+        <div id="tuyensinh" class="tab-content">
+            <div id="tuyensinh-documents"></div>
+        </div>
+
+        <div id="hanhchinh" class="tab-content">
+            <div id="hanhchinh-documents"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
